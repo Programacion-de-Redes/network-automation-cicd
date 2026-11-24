@@ -1,0 +1,15 @@
+network:
+  name: laboratorio-cisco
+
+  devices:
+    - hostname: R1
+      role: router
+      expected_status: reachable
+
+    - hostname: SW1
+      role: switch
+      expected_status: reachable
+
+  validation:
+    check_connectivity: true
+    check_hostname: true
